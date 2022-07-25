@@ -9,12 +9,12 @@ processes = []
   PORT = "8080"
 
 [experimental]
-  allowed_public_ports = []
+  allowed_public_ports = true
   auto_rollback = true
 
 [[services]]
   http_checks = []
-  internal_port = 8080
+  internal_port = 80
   processes = ["app"]
   protocol = "tcp"
   script_checks = []
